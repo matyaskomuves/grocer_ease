@@ -64,6 +64,9 @@ const ShoppingList: React.FC = () => {
                         <ListboxOption value="category" className="cursor-pointer px-4 py-2 hover:bg-gray-100">
                             Category
                         </ListboxOption>
+                        <ListboxOption value="price" className="cursor-pointer px-4 py-2 hover:bg-gray-100">
+                            Price
+                        </ListboxOption>
                     </ListboxOptions>
                 </Listbox>
 
