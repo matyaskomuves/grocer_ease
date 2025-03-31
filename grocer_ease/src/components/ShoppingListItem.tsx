@@ -30,6 +30,8 @@ const ShoppingListItem: React.FC<ShoppingListItemProps> = ({ item }) => {
                     <span className={item.completed ? 'line-through text-slate-400' : ''}>{item.name}</span>
                     <span className={item.completed ? 'line-through text-slate-400 ml-0.5' : 'ml-0.5'}>({item.quantity})</span>
                     <span className='ml-5 text-slate-500 text-sm'>{item.category}</span>
+                    <span className='text-red-600 ml-2.5'>- {item.price} $
+                    </span>
                 </div>
             </motion.div>
             <motion.div

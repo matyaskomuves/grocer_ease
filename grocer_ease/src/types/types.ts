@@ -4,6 +4,7 @@ export interface ShoppingItem {
     id: string;
     name: string;
     quantity: number;
+    price: number;
     category: string;
     completed: boolean;
     createdAt: string;
