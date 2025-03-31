@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-xs: 30rem;
+}
+
+body {
+    @apply bg-slate-200 font-sans;
+}
+
+button {
+    @apply rounded-md px-4 py-2 font-semibold transition-colors duration-300;
+}
+
+input {
+    @apply border rounded-md bg-slate-100 px-4 py-2.5 focus:outline-none focus:ring focus:ring-blue-300 focus:bg-white;
+}
+
+#searchInput {
+    padding-left: 2.5rem;
+}
