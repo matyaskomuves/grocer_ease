@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStore } from '../store/store';
 import ShoppingListItem from './ShoppingListItem';
-import { ShoppingItem, FilterOption, SortOption } from '../types/types';
+// import { FilterOption, SortOption } from '../types/types';
 import { Search, Undo2, Redo2 } from 'lucide-react';
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react';
 
@@ -33,7 +33,7 @@ const ShoppingList: React.FC = () => {
     return (
         <div>
             <div className='flex flex-col md:flex-row justify-left items-center mb-5 gap-2.5 md:gap-0.5'>
-                <Listbox<FilterOption> as="div" value={filter} onChange={setFilter} className="px-4 py-2 rounded-md">
+                <Listbox as="div" value={filter} onChange={setFilter} className="px-4 py-2 rounded-md">
                     <ListboxButton className="px-4 py-2 bg-slate-100 border rounded-md shadow-sm w-30 cursor-pointer">
                         {filter}
                     </ListboxButton>
@@ -50,7 +50,7 @@ const ShoppingList: React.FC = () => {
                     </ListboxOptions>
                 </Listbox>
 
-                <Listbox<SortOption> as="div" value={sort} onChange={setSort} className="px-4 py-2 rounded-md">
+                <Listbox as="div" value={sort} onChange={setSort} className="px-4 py-2 rounded-md">
                     <ListboxButton className="px-4 py-2 bg-slate-100 border rounded-md shadow-sm w-30 cursor-pointer">
                         {sort}
                     </ListboxButton>
